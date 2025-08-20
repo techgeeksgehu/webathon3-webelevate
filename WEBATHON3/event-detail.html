@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
+    <meta name="description" content="Event details for Nirvana Tech Fest 2025.">
+    <title>Event Details • Nirvana Tech Fest 2025</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container nav-inner">
+            <a href="landing.html" class="brand">
+                <img src="New folder/white.svg" alt="Nirvana logo" class="logo" onerror="this.style.display='none'">
+                <span class="brand-accent">Nirvana</span> Tech Fest 2025
+            </a>
+            <nav class="nav">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="events.html" class="nav-link">Events</a></li>
+                </ul>
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" aria-pressed="false">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="event-hero section">
+            <div class="event-hero-bg" id="eventHeroBg"></div>
+            <div class="container event-hero-inner">
+                <h1 id="eventTitle">Loading…</h1>
+                <p id="eventDescription">Please wait while we load event details.</p>
+                <div class="meta">
+                    <div class="meta-item"><i class="fa-regular fa-calendar"></i><span id="eventDate">TBA</span></div>
+                    <div class="meta-item"><i class="fa-regular fa-clock"></i><span id="eventTime">TBA</span></div>
+                    <div class="meta-item"><i class="fa-solid fa-location-dot"></i><span id="eventVenue">TBA</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container event-body">
+                <div class="event-rules reveal">
+                    <h2>Rules & Eligibility</h2>
+                    <ul id="rulesList" class="rules-list"></ul>
+                    <div class="eligibility" id="eligibilityText"></div>
+                </div>
+                <div class="event-form reveal">
+                    <h2>Participation Form</h2>
+                    <form class="form" onsubmit="return false;">
+                        <div class="form-row">
+                            <label for="name">Name</label>
+                            <input id="name" name="name" type="text" placeholder="Your full name" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="email">Email</label>
+                            <input id="email" name="email" type="email" placeholder="you@example.com" required>
+                        </div>
+                        <div class="form-row">
+                            <label for="org">College/School</label>
+                            <input id="org" name="org" type="text" placeholder="Your institution" required>
+                        </div>
+                        <div class="form-actions">
+                            <a href="events.html" class="btn btn-ghost">Back to Events</a>
+                            <button type="button" class="btn btn-primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <a href="landing.html" class="brand"><span class="brand-accent">Nirvana</span> Tech Fest 2025</a>
+                <p>For queries, email info@nirvanatechfest.in</p>
+            </div>
+            <div class="footer-links">
+                <a href="events.html">Events</a>
+                <a href="index.html#gallery">Gallery</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
+
+
